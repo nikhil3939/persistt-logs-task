@@ -54,3 +54,45 @@ persist-logs-task/
 
 ```bash
 docker-compose up --build
+
+2️⃣ Test the App
+Visit:http://localhost:3000
+
+Each refresh or visit will log a new entry.
+
+3️⃣ Check the Logs
+On your host machine, 
+view:logs/access.log
+You'll see all logged requests.
+
+4️⃣ Stop the App
+Ctrl + C
+To remove the container (optional):docker-compose down
+
+📄 .gitignore
+Your .gitignore includes:
+
+node_modules/
+logs/
+*.log
+.env
+
+This ensures large folders and runtime files (like logs and dependencies) are not pushed to GitHub, keeping your repository clean and professional.
+
+---
+
+🔚 Final Result
+
+After running the app and accessing it through the browser, logs are successfully stored in the `logs/access.log` file on the host machine.  
+This confirms that Docker volumes are working correctly and logs are being persisted outside the container.
+
+![Screenshot of Logs File](./screenshots/logs-access.png)
+> *(Replace this image path with your actual screenshot path and name)*
+
+---
+
+ 👨‍💻 Author
+
+**Nikhil B**  
+[GitHub](https://github.com/nikhil3939) • [LinkedIn](https://www.linkedin.com/in/nikhil-b-23b89327a)  
+Trained in DevOps & Cloud Computing  
