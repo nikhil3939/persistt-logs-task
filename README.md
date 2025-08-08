@@ -87,7 +87,7 @@ After running the app and accessing it through the browser, logs are successfull
 This confirms that Docker volumes are working correctly and logs are being persisted outside the container.
 
 ![Screenshot of Logs File](./screenshots/logs-access.png)
-> *(Replace this image path with your actual screenshot path and name)*
+
 
 ---
 
